@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rest.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+    <div id="tableempty">
+        <div id="tableemptybody">
+            <div id="tableemptyheader">
+                <h1>Table Order Details</h1>
+                <h1><i class="fad fa-times-square" id="close" onmousedown="closetableempty(event)"></i></h1>
+            </div>
+            <div id="tableemptybd">
+                <h1>Table Empty</h1>
+            </div>
+        </div>    
+    </div>
+    <header>
+        <h1>Restaurant App</h1>
+    </header>    
+    <div id="app-body">
+    <aside >
+        <h1>Tables</h1>
+        <input type="search" placeholder="Search table" id="Table-search" onkeyup="tablesearch(event)" onsearch="tablesearch(event)">
+        <div id="Table-list">
+            
+        </div>
+    </aside>
+    <main>
+        <h1>Menu</h1>
+        <input type="search" placeholder="search menu...by course by food" id="Menu-search" onkeyup="menusearch(event)" onsearch="menusearch(event)">
+        <div id="Menu-list">
+
+        </div>
+    </main>
+    </div>
+    <div id="mainmodal">
+    <div id="modal">
+        <div id="modal-head">
+            <h1>Table <span id="tablenomodal"></span> | Order Details</h1>
+            <h1><i class="fad fa-times-square" id="close" onmousedown="closemodal(event)"></i></h1>
+        </div>
+
+        <div id="modal-body">
+            <table id="table-items" width="90%">
+                <thead><tr>
+                    <th>S.No</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th></th>
+                </tr></thead>
+                <tbody id="billbody">
+                    
+                </tbody>   
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td><td><h1 style="text-align:left;font-size:larger;" >Total <span id="total" ></span></h1></td>
+                    </tr>
+                </tfoot> 
+            </table>
+            <div id="modal-footer" style="padding:10px;"></h1><span onclick="closesession(event)" id="closesession" >CLOSE SESSION(GENERATE BILL)</span></div>
+        </div> 
+    </div>
+    </div>
+    <div id="billmain" >
+    <div id="bill">
+        <h1 id="closebillheader"><i class="fad fa-times-square" id="closebill" onmousedown="closebill(event)"></i></h1>
+        <h1>Table <span id="closebillno"></span></h1>
+        <h1>Total : <span id="tablebilltotal"></span></h1>
+    </div> 
+    <!-- <script src="rest.js"></script> -->
+    <script src="restaurant.json"></script>
+    <!-- <script src="jsonpractice.js"></script> -->
+    <script src="restaurant.js"></script>
+</body>
+</html>
