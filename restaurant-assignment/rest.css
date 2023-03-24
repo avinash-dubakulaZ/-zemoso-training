@@ -1,0 +1,242 @@
+*{ 
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family:serif;
+}
+header h1{
+color:whitesmoke;    
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+header{
+    background-color: #170fab;
+    padding: 1%;
+    height: 10vh;
+    border: 3px solid black;
+    text-align: center;
+}
+#app-body{
+    /* border: 4px solid rgb(242, 124, 15); */
+    height: 90vh;
+    display: flex;
+    background-color: azure;
+}
+aside{
+    /* border: 5px solid midnightblue; */
+    height: 100%;
+    width:30%
+}
+main{
+    /* border:5px solid aqua; */
+    border-left:4px solid black;
+    height: 100%;
+    width:70%;
+    /* background-color: #170fab; */
+}
+main h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1%;
+}
+main #Menu-search{
+    margin: 4%;
+    width: 50%;
+    height: 30px;
+    font-size: 17px;
+    display: block;
+    background-color: aliceblue;
+    padding-left: 10px;
+}
+main #Menu-list{
+    height: 70%;
+    margin: 2%;
+    /*order: 5px solid palegreen;*/
+    padding: 2%;
+    overflow: auto;
+}
+aside #Table-list{
+    height: 80%;
+    margin: 4%;
+    /*border: 5px solid palegreen;*/
+    overflow: auto;
+}
+aside h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 2%;
+}
+aside #Table-search{
+    margin: 6%;
+    margin-top: 9%;
+    padding-left: 10px;
+    width: 50%;
+    height: 30px;
+    font-size: 17px;
+    background-color: aliceblue;
+    display: block;
+}
+.table-card{
+border:3px solid black;
+padding:8%;
+margin:2% 2%;
+}
+.menu-card{
+    margin:1% 0%;
+    background-color: rgb(51, 126, 218);
+    /*border:4px solid black;*/
+    padding:1.5% 2% ;
+    height: 25%;
+    color: rgb(6, 6, 6);
+    box-shadow: 0px 0px 8px #aaaaaa;
+}
+#modal{
+    position: absolute;
+    left:25%;
+    top: 35%;
+    height: 50%;
+    width: 50%;
+    /* border:5px solid black; */
+    z-index: 1;
+    background-color: rgb(38, 38, 129);
+}
+#modal-head{
+    height: 20%;
+    /* border:3px solid yellow; */
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0% 2% 0% 1%;
+    color: white;
+}
+#modal-body{
+    padding:2%;
+    height: 70%;
+    /* border:3px solid red; */
+    background-color: rgb(255, 252, 252);
+    overflow: auto;
+    background-color:white;
+
+}
+#table-items{
+    text-align: left;
+    
+    
+}
+#table-items td,th{
+    padding:2% 1%;
+    font-weight: bolder;
+}
+#modal-footer{
+    /* border:5px solid red; */
+    width:100%;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    height: 10%;
+    color: white;
+    
+}
+#modal-footer span{
+    float: right;
+    font-weight: bolder;
+}
+#modal-footer span:active{
+    transform: scale(1.05);
+}
+#billbody tr{
+    max-height: 25%;
+    
+}
+#bill{
+    /* border: 5px solid crimson;
+    color: black;
+    background-color: bisque;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    display: block;
+    z-index:1;
+    left:500px;
+    top:20%; */
+    position:absolute;
+    left:35%;
+    top: 25%;
+    height: 40%;
+    width: 30%;
+    /* border:5px solid black; */
+    display: block;
+    background-color: rgb(241, 241, 248);
+    font-size:x-large;
+} 
+#bill h1{
+    margin-bottom: 5%;
+    padding-left: 2%;
+}
+#closebillheader{
+    background-color: rgb(38, 38, 129);
+    text-align: right;
+    
+}
+#closebill{
+    /* background-color: white; */
+    padding: 2px;
+    color: white;
+}
+#mainmodal{
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    top: 0;
+}
+#billmain{
+    background-color: rgba(218, 213, 213, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    top: 0;
+}
+#tableempty{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 20;
+    left: 0;
+    z-index: 1;
+    display: none;
+    border: 5px solid black;
+    background-color: rgba(0,0,0,0.4);
+}
+#tableemptybody{
+    top:35%;
+    left:35%;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color:#f9fbf9;
+}
+#tableemptyheader{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(38, 38, 129);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+#tableemptybd{
+    padding: 15px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
